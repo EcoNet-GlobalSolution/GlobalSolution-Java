@@ -20,7 +20,7 @@ public class Especie {
     @SequenceGenerator(name = "SQ_ESPECIE", sequenceName = "SQ_ESPECIE", allocationSize = 1)
 
     @Column(name = "ID_ESPECIE")
-    private Long idEspecie;
+    private Long id;
 
     @Column(name = "NOME")
     private String nome;

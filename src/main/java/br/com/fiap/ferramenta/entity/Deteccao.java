@@ -22,7 +22,7 @@ public class Deteccao {
     @SequenceGenerator(name = "SQ_DETECCAO", sequenceName = "SQ_DETECCAO", allocationSize = 1)
 
     @Column(name = "ID_DETECCAO")
-    private Long idDeteccao;
+    private Long id;
 
     @Column(name = "DATA")
     private LocalDate data;

@@ -23,7 +23,7 @@ public class Coordenadas {
     @SequenceGenerator(name = "SQ_COORDENADAS", sequenceName = "SQ_COORDENADAS", allocationSize = 1)
 
     @Column(name = "ID_COORDENADAS")
-    private Long idCordenadas;
+    private Long id;
 
     @Column(name = "LONGITUDE")
     private BigDecimal longitude;
