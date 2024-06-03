@@ -28,5 +28,8 @@ public class Especie {
     @Column(name = "ESPECIE")
     private String especie;
 
+    @Enumerated
+    @Column(name = "TIPO_RISCO")
+    private TipoRisco tipo;
 
 }

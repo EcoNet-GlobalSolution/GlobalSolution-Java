@@ -9,7 +9,7 @@ import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.Optional;
+import java.util.List;
 
 @Service
 public class DeteccaoService implements ServiceDTO<Deteccao, DeteccaoRequest, DeteccaoResponse>{
@@ -17,28 +17,54 @@ public class DeteccaoService implements ServiceDTO<Deteccao, DeteccaoRequest, De
     @Autowired
     private DeteccaoRepository repo;
 
-    @Override
-    public Collection<Deteccao> findAll(Example<Deteccao> example) {
-        return repo.findAll(example);
-    }
+    @Autowired
+    private EspecieService especieService;
+
+    @Autowired
+    private CoordenadasService coordenadasService;
 
     @Override
-    public Optional<Deteccao> findById(Long id) {
-        return repo.findById(id);
-    }
+    public Deteccao toEntity(DeteccaoRequest r) {
 
-    @Override
-    public Deteccao save(Deteccao e) {
-        return repo.save(e);
-    }
+        var especie = especieService.findById(r.especie().id());
 
-    @Override
-    public Deteccao toEntity(DeteccaoRequest dto) {
-        return null;
+        var coordenadas = coordenadasService.findById(r.especie().id());
+
+        return Deteccao.builder()
+                .id(r.id())
+                .data(r.data())
+                .especie(especie)
+                .coordenada(coordenadas)
+                .build();
     }
 
     @Override
     public DeteccaoResponse toResponse(Deteccao e) {
+
+        var especie = especieService.toResponse(e.getEspecie());
+
+        var coordenadas = coordenadasService.toResponse(e.getCoordenada());
+
+        return DeteccaoResponse.builder()
+                .id(e.getId())
+                .data(e.getData())
+                .especie(especie)
+                .coordenada(coordenadas)
+                .build();
+    }
+
+    @Override
+    public Collection<Deteccao> findAll(Example<Deteccao> example) {
+        return List.of();
+    }
+
+    @Override
+    public Deteccao findById(Long id) {
+        return null;
+    }
+
+    @Override
+    public Deteccao save(Deteccao e) {
         return null;
     }
 }
