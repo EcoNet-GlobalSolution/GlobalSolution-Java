@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
@@ -15,14 +14,14 @@ import java.time.LocalDate;
 @Builder
 
 @Entity
-@Table(name = "TBL_COORDENADAS")
-public class Coordenadas {
+@Table(name = "TBL_COORDENADA")
+public class Coordenada {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_COORDENADAS")
-    @SequenceGenerator(name = "SQ_COORDENADAS", sequenceName = "SQ_COORDENADAS", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_COORDENADA")
+    @SequenceGenerator(name = "SQ_COORDENADA", sequenceName = "SQ_COORDENADA", allocationSize = 1)
 
-    @Column(name = "ID_COORDENADAS")
+    @Column(name = "ID_COORDENADA")
     private Long id;
 
     @Column(name = "LONGITUDE")

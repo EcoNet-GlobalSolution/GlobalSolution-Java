@@ -14,7 +14,7 @@ public class FerramentaApplication {
 	}
 	@GetMapping(value = "/")
 	public String index(){
-		return "NOME DA EMPRESA";
+		return "ECO-NET";
 	}
 
 }

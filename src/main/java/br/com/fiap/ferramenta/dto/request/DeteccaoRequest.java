@@ -15,7 +15,7 @@ public record DeteccaoRequest(
         LocalDate data,
 
         @NotNull
-        EspecieRequest especie,
+        AbstractRequest especie,
 
         @NotNull
         CoordenadaRequest coordenada

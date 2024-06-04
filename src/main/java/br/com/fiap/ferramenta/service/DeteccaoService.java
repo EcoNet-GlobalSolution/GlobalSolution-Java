@@ -9,7 +9,6 @@ import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.List;
 
 @Service
 public class DeteccaoService implements ServiceDTO<Deteccao, DeteccaoRequest, DeteccaoResponse>{
@@ -21,20 +20,20 @@ public class DeteccaoService implements ServiceDTO<Deteccao, DeteccaoRequest, De
     private EspecieService especieService;
 
     @Autowired
-    private CoordenadasService coordenadasService;
+    private CoordenadaService coordenadaService;
 
     @Override
     public Deteccao toEntity(DeteccaoRequest r) {
 
         var especie = especieService.findById(r.especie().id());
 
-        var coordenadas = coordenadasService.findById(r.especie().id());
+        var coordenada = coordenadaService.findById(r.coordenada().id());
 
         return Deteccao.builder()
                 .id(r.id())
                 .data(r.data())
                 .especie(especie)
-                .coordenada(coordenadas)
+                .coordenada(coordenada)
                 .build();
     }
 
@@ -43,13 +42,13 @@ public class DeteccaoService implements ServiceDTO<Deteccao, DeteccaoRequest, De
 
         var especie = especieService.toResponse(e.getEspecie());
 
-        var coordenadas = coordenadasService.toResponse(e.getCoordenada());
+        var coordenada = coordenadaService.toResponse(e.getCoordenada());
 
         return DeteccaoResponse.builder()
                 .id(e.getId())
                 .data(e.getData())
                 .especie(especie)
-                .coordenada(coordenadas)
+                .coordenada(coordenada)
                 .build();
     }
 

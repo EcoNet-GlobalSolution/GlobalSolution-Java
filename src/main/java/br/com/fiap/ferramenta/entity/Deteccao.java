@@ -29,11 +29,11 @@ public class Deteccao {
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(
-            name = "COORDENADAS", // Nome da coluna de chave estrangeira
-            referencedColumnName = "ID_COORDENADAS",
+            name = "COORDENADA", // Nome da coluna de chave estrangeira
+            referencedColumnName = "ID_COORDENADA",
             foreignKey = @ForeignKey(name = "FK_DETECCAO_COORDENADA")
     )
-    private Coordenadas coordenada;
+    private Coordenada coordenada;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(
