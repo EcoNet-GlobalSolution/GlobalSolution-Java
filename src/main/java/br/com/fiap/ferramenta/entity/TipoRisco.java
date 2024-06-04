@@ -8,7 +8,7 @@ import lombok.Getter;
 public enum TipoRisco {
 
     CR,
-    CRPEX,
+    CR_PEX,
     EN,
     VU
 }

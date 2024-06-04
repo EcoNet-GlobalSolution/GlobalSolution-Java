@@ -41,17 +41,17 @@ public class EspecieService implements ServiceDTO<Especie, EspecieRequest, Espec
 
     @Override
     public Collection<Especie> findAll(Example<Especie> example) {
-        return List.of();
+        return repo.findAll( example );
     }
 
     @Override
     public Especie findById(Long id) {
-        return null;
+        return repo.findById( id ).orElse( null );
     }
 
     @Override
     public Especie save(Especie e) {
-        return null;
+        return repo.save( e );
     }
 }
 

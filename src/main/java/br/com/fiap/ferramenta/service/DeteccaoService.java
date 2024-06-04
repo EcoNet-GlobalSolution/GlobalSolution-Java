@@ -55,17 +55,17 @@ public class DeteccaoService implements ServiceDTO<Deteccao, DeteccaoRequest, De
 
     @Override
     public Collection<Deteccao> findAll(Example<Deteccao> example) {
-        return List.of();
+        return repo.findAll( example );
     }
 
     @Override
     public Deteccao findById(Long id) {
-        return null;
+        return repo.findById( id ).orElse( null );
     }
 
     @Override
     public Deteccao save(Deteccao e) {
-        return null;
+        return repo.save( e );
     }
 }
 

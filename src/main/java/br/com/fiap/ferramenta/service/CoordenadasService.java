@@ -38,17 +38,17 @@ public class CoordenadasService implements ServiceDTO<Coordenadas, CoordenadaReq
 
     @Override
     public Collection<Coordenadas> findAll(Example<Coordenadas> example) {
-        return List.of();
+        return repo.findAll( example );
     }
 
     @Override
     public Coordenadas findById(Long id) {
-        return null;
+        return repo.findById( id ).orElse( null );
     }
 
     @Override
     public Coordenadas save(Coordenadas e) {
-        return null;
+        return repo.save( e );
     }
 }
 
