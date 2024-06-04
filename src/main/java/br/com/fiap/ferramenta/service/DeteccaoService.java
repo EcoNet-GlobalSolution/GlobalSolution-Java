@@ -27,7 +27,7 @@ public class DeteccaoService implements ServiceDTO<Deteccao, DeteccaoRequest, De
 
         var especie = especieService.findById(r.especie().id());
 
-        var coordenada = coordenadaService.findById(r.coordenada().id());
+        var coordenada = coordenadaService.toEntity(r.coordenada());
 
         return Deteccao.builder()
                 .id(r.id())
