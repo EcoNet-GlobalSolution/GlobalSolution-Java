@@ -11,21 +11,18 @@
 
 # Iniciando a aplicação
 
-- Para pegar o arquivo, copie o código do repositório e inicie o git bash no desktop, e utilize o comando a seguir:
+- Para pegar o arquivo, clone o repositório ná sua maquina utilizando o comando a seguir:
 ```
 git clone https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java.git
 ```
-
-- Depois abra o Intellij, selecione a opção "open" e procure a pasta do projeto.
-
-- Ao abrir o programa no Intellij, crie um file ".env" na altura no projeto contendo os seguintes dados a seguir.
-- É necessário realizar este passo para realizar a conexão com o banco da oracle.
+- Ao abrir o projeto, crie um file ".env" na altura no projeto contendo os seguintes dados a seguir.
+- É necessário realizar este passo para realizar a conexão com o banco da oracle!
 ```
 DB_JDBC=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
 DB_USERNAME= "Seu usuário do banco"
 DB_PASSWORD= "Sua senha do banco"
 ```
-- Para rodar a aplicação, digite o comando abaixo no terminal do Intellij para executar o programa.
+- Para rodar a aplicação, digite o comando abaixo no terminal da IDE para executar o programa.
 ```
 mvn spring-boot:run
 ```
