@@ -18,7 +18,7 @@ git clone https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java.git
 - Ao abrir o projeto, crie um file ".env" na altura no projeto contendo os seguintes dados a seguir.
 - É necessário realizar este passo para realizar a conexão com o banco da oracle!
 ```
-DB_JDBC=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
+DB_JDBC= "URL do seu banco"
 DB_USERNAME= "Seu usuário do banco"
 DB_PASSWORD= "Sua senha do banco"
 ```
@@ -29,13 +29,19 @@ mvn spring-boot:run
 - Lembrando que para dar certo, é necessário o Java Runtime estar atualizado, em sua versão mais recente, para ser compátivel com o plugin do maven
 
 
-# Diagramas do projeto
+# Diagrama de Entidades e Relacionamentos
 
 <img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/GS-2TDSPF-1S-D.pysical.png">
 
+# Diagrama de Classes de Entidades
+
 <img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/GS-2TDSPF-1S-D.entity.png">
 
+# Diagrama de Classe de Request (DTO'S )
+
 <img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/GS-2TDSPF-1S-D.request.png">
+
+# Diagrama de Classe de Response (DTO'S )
 
 <img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/GS-2TDSPF-1S-D.response.png">
 
