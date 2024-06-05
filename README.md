@@ -19,12 +19,18 @@ git clone https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java.git
 - Depois abra o Intellij, selecione a opção "open" e procure a pasta do projeto.
 
 - Ao abrir o programa no Intellij, crie um file ".env" na altura no projeto contendo os seguintes dados a seguir.
+- É necessário realizar este passo para realizar a conexão com o banco da oracle.
 ```
 DB_JDBC=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
 DB_USERNAME= "Seu usuário do banco"
 DB_PASSWORD= "Sua senha do banco"
 ```
-- É necessário realizar este passo para realizar a conexão com o banco da oracle.
+- Para rodar a aplicação, digite o comando abaixo no terminal do Intellij para executar o programa.
+```
+mvn spring-boot:run
+```
+- Lembrando que para dar certo, é necessário o Java Runtime estar atualizado, em sua versão mais recente, para ser compátivel com o plugin do maven
+
 
 # Diagramas do projeto
 
