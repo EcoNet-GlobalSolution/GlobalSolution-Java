@@ -1,9 +1,11 @@
 package br.com.fiap.ferramenta.dto.request;
 
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 
 public record AbstractRequest(
-        @NotNull(message = "O id é campo obrigatório")
+        @Positive
+        @NotNull
         Long id
 
 ) {

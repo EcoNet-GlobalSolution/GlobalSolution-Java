@@ -1,14 +1,12 @@
 package br.com.fiap.ferramenta.dto.request;
 
-import jakarta.validation.constraints.DecimalMax;
-import jakarta.validation.constraints.DecimalMin;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 
 import java.math.BigDecimal;
 
 public record CoordenadaRequest(
 
+        @Positive
         Long id,
 
         @DecimalMax(value = "90")
