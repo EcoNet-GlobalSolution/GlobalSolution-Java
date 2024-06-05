@@ -9,6 +9,21 @@
 | Mateus Mantovani Araújo     | RM98524  | 2TDSPF                  |
 | Juan de Godoy               | RM551408 | 2TDSPF                  |
 
+# Iniciando a aplicação
+
+- Para pegar o arquivo, copie o código do repositório e inicie o git bash no desktop, e utilize o comando a seguir:
+```
+git clone
+```
+
+- Ao abrir o programa no Intellij, crie um file ".env" na altura no projeto contendo os seguintes dados a seguir.
+```
+DB_JDBC=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
+DB_USERNAME= "Seu usuário do banco"
+DB_PASSWORD= "Sua senha do banco"
+```
+- É necessário realizar este passo para realizar a conexão com o banco da oracle.
+
 # Diagramas do projeto
 
 <img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/GS-2TDSPF-1S-D.pysical.png">
