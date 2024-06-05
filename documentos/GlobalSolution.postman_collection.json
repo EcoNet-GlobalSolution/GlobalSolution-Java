@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "9780780b-b50f-45e3-9b7b-1a984badcbe3",
+		"name": "GlobalSolution",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33729336"
+	},
+	"item": [
+		{
+			"name": "Deteccao",
+			"item": [
+				{
+					"name": "Deteccao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"2024-06-04\",\r\n    \"coordenada\": {\r\n        \"id\": 1,\r\n        \"latitude\": 43.8123,\r\n        \"longitude\": 116.2345\r\n    },\r\n    \"especie\": {\r\n        \"id\": 2,\r\n        \"nome\": \"tubarao-fucinho-negro\",\r\n        \"especie\": \"Carcharhinus acronotus\",\r\n        \"tipo\": \"VU\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/deteccao",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"deteccao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deteccao by example",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/deteccao",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"deteccao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deteccao by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/deteccao/?id",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"deteccao",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Especie",
+			"item": [
+				{
+					"name": "Especie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"tubarão-fucinho-negro\",\r\n    \"especie\": \"Carcharhinus acronotus\",\r\n    \"tipo\": \"VU\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/especie",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"especie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Especie by example",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"tubarao-fucinho-negro\",\r\n    \"especie\": \"tubarao\",\r\n    \"tipo\": \"VU\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/especie",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"especie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Especie by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "",
+								"description": "Id especie"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/especie/?id",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"especie",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
