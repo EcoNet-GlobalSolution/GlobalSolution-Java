@@ -21,12 +21,16 @@
 
 **DeteccaoResource com as seguintes ROTAS e VERBOS**
 
-"localhost/deteccao" - GET/POST
+"localhost/deteccao" - POST
+
+"localhost/deteccao" - GET by example
 
 "localhost/deteccao/{id}" - GET
 
 **EspecieResource com as seguintes ROTAS e VERBOS**
 
-"localhost/especie" - GET/POST
+"localhost/especie" - POST
+
+"localhost/especie" - GET by example
 
 "localhost/especie/{id}" - GET
