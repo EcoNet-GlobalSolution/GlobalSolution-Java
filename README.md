@@ -13,8 +13,10 @@
 
 - Para pegar o arquivo, copie o código do repositório e inicie o git bash no desktop, e utilize o comando a seguir:
 ```
-git clone
+git clone https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java.git
 ```
+
+- Depois abra o Intellij, selecione a opção "open" e procure a pasta do projeto.
 
 - Ao abrir o programa no Intellij, crie um file ".env" na altura no projeto contendo os seguintes dados a seguir.
 ```
