@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -42,5 +44,29 @@ public class Deteccao {
             foreignKey = @ForeignKey(name = "FK_DETECCAO_ESPECIE")
     )
     private Especie especie;
+
+    @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinTable(
+            name = "TBL_DETECCAO_EMBARCACAO",
+            joinColumns = {
+                    @JoinColumn(
+                            name = "DETECCAO",
+                            referencedColumnName = "ID_DETECCAO",
+                            foreignKey = @ForeignKey(
+                                    name = "FK_DETECCCAO_EMBARCACAO"
+                            )
+                    )
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(
+                            name = "EMBARCACAO",
+                            referencedColumnName = "NUM_REGISTRO",
+                            foreignKey = @ForeignKey(
+                                    name = "FK_EMBARCACAO_DETECCAO"
+                            )
+                    )
+            }
+    )
+    private Set<Embarcacao> embarcacao = new LinkedHashSet<>();
 
 }

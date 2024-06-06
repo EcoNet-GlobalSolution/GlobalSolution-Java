@@ -1,5 +1,6 @@
 package br.com.fiap.ferramenta.dto.request;
 
+import br.com.fiap.ferramenta.dto.response.EmbarcacaoResponse;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -21,5 +22,6 @@ public record DeteccaoRequest(
 
         @NotNull
         CoordenadaRequest coordenada
+
 ) {
 }
