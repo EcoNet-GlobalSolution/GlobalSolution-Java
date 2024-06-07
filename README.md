@@ -37,7 +37,7 @@ mvn spring-boot:run
 
 # Diagrama de Entidades e Relacionamentos
 
-<img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/image.png">
+<img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/Diagramas/GS-2TDSPF-1S-D.physical.png">
 
 # Diagrama de Classes de Entidades
 
@@ -45,11 +45,11 @@ mvn spring-boot:run
 
 # Diagrama de Classe de Request (DTO'S )
 
-<img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/GS-2TDSPF-1S-D.request.png">
+<img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/Diagramas/GS-2TDSPF-1S-D.request.png">
 
 # Diagrama de Classe de Response (DTO'S )
 
-<img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/GS-2TDSPF-1S-D.response.png">
+<img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/Diagramas/GS-2TDSPF-1S-D.response.png">
 
 # Endpoints
 
