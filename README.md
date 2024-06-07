@@ -28,9 +28,9 @@ mvn spring-boot:run
 ```
 - Lembrando que para dar certo, é necessário o Java Runtime estar atualizado, em sua versão mais recente, para ser compátivel com o plugin do maven
 
-# Links do video pitch / Aplicação raodando
+# Links do vídeo Pitch / Aplicação
 
-- Link vídeo pitch: https://youtu.be/60S74fi1rvE
+- Link vídeo Pitch: https://youtu.be/60S74fi1rvE
 
 - Link vídeo da aplicação: https://youtu.be/dKR2BuoE_G8
 
