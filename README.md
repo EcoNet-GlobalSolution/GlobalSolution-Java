@@ -55,6 +55,14 @@ mvn spring-boot:run
 
 "localhost/deteccao/{id}" - GET
 
+**EmbarcacaoResource com as seguintes ROTAS e VERBOS**
+
+"localhost/embarcacao" - POST
+
+"localhost/embarcacao" - GET by example
+
+"localhost/embarcacao/{id}" - GET
+
 **EspecieResource com as seguintes ROTAS e VERBOS**
 
 "localhost/especie" - POST
