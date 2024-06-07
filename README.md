@@ -41,7 +41,7 @@ mvn spring-boot:run
 
 # Diagrama de Classes de Entidades
 
-<img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/GS-2TDSPF-1S-D.entity.png">
+<img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/Diagramas/GS-2TDSPF-1S-D.entity.png">
 
 # Diagrama de Classe de Request (DTO'S )
 
