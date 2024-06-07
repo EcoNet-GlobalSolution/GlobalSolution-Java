@@ -1,8 +1,10 @@
 package br.com.fiap.ferramenta.dto.response;
 
+import br.com.fiap.ferramenta.entity.Embarcacao;
 import lombok.Builder;
 
 import java.time.LocalDate;
+import java.util.Collection;
 
 @Builder
 public record DeteccaoResponse(
@@ -13,6 +15,9 @@ public record DeteccaoResponse(
 
         EspecieResponse especie,
 
-        CoordenadaResponse coordenada
+        CoordenadaResponse coordenada,
+
+        EmbarcacaoResponse embarcacao
+
 ) {
 }

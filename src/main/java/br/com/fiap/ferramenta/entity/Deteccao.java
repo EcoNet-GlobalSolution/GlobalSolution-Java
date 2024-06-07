@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -42,5 +44,13 @@ public class Deteccao {
             foreignKey = @ForeignKey(name = "FK_DETECCAO_ESPECIE")
     )
     private Especie especie;
+
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(
+            name = "EMBARCACAO", // Nome da coluna de chave estrangeira
+            referencedColumnName = "NUM_REGISTRO",
+            foreignKey = @ForeignKey(name = "FK_DETECCAO_REGISTRO")
+    )
+    private Embarcacao embarcacao;
 
 }
