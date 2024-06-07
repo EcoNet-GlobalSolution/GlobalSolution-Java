@@ -6,14 +6,13 @@ import lombok.Builder;
 @Builder
 public record EmbarcacaoResponse(
 
-        Long registro,
+        Long id,
 
         String nome,
 
         String proprietario,
 
-        String porto,
-
         TipoEmbarcacao tipo
+
 ) {
 }

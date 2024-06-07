@@ -45,28 +45,12 @@ public class Deteccao {
     )
     private Especie especie;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    @JoinTable(
-            name = "TBL_DETECCAO_EMBARCACAO",
-            joinColumns = {
-                    @JoinColumn(
-                            name = "DETECCAO",
-                            referencedColumnName = "ID_DETECCAO",
-                            foreignKey = @ForeignKey(
-                                    name = "FK_DETECCCAO_EMBARCACAO"
-                            )
-                    )
-            },
-            inverseJoinColumns = {
-                    @JoinColumn(
-                            name = "EMBARCACAO",
-                            referencedColumnName = "NUM_REGISTRO",
-                            foreignKey = @ForeignKey(
-                                    name = "FK_EMBARCACAO_DETECCAO"
-                            )
-                    )
-            }
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(
+            name = "EMBARCACAO", // Nome da coluna de chave estrangeira
+            referencedColumnName = "NUM_REGISTRO",
+            foreignKey = @ForeignKey(name = "FK_DETECCAO_REGISTRO")
     )
-    private Set<Embarcacao> embarcacao = new LinkedHashSet<>();
+    private Embarcacao embarcacao;
 
 }

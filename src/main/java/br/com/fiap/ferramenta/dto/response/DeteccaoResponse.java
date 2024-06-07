@@ -15,7 +15,9 @@ public record DeteccaoResponse(
 
         EspecieResponse especie,
 
-        CoordenadaResponse coordenada
+        CoordenadaResponse coordenada,
+
+        EmbarcacaoResponse embarcacao
 
 ) {
 }
