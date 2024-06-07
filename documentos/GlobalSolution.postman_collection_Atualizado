@@ -185,6 +185,96 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Embarcacao",
+			"item": [
+				{
+					"name": "localhost/embarcacao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"registro\": \"9827138178\",\r\n    \"nome\": \"Titanic\",\r\n    \"proprietario\": \"Capitão nascimento\",\r\n    \"tipo\": \"NAVIO_DE_PESCA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/embarcacao",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"embarcacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/embarcacao",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/embarcacao",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"embarcacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/embarcacao/9827138178",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/embarcacao/9827138178",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"embarcacao",
+								"9827138178"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

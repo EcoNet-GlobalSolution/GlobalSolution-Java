@@ -1,6 +1,7 @@
 package br.com.fiap.ferramenta.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,6 +19,7 @@ import java.util.Set;
 public class Embarcacao {
 
     @Id
+    @NotNull
     @Column(name = "NUM_REGISTRO") //Um número de registro ou identificação único da embarcação.
     private Long id;
 
