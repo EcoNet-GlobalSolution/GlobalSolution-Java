@@ -31,7 +31,7 @@ mvn spring-boot:run
 
 # Diagrama de Entidades e Relacionamentos
 
-<img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/GS-2TDSPF-1S-D.pysical.png">
+<img src="https://github.com/EcoNet-GlobalSolution/GlobalSolution-Java/blob/main/documentos/image.png">
 
 # Diagrama de Classes de Entidades
 
