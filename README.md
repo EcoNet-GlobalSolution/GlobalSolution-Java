@@ -30,7 +30,7 @@ mvn spring-boot:run
 
 # Links do video pitch / Aplicação raodando
 
-- Link vídeo pitch:
+- Link vídeo pitch: https://youtu.be/60S74fi1rvE
 
 - Link vídeo da aplicação: https://youtu.be/dKR2BuoE_G8
 
