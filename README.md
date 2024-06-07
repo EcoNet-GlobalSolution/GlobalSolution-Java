@@ -49,13 +49,16 @@ mvn spring-boot:run
 
 **DeteccaoResource com as seguintes ROTAS e VERBOS**
 
+
 "localhost/deteccao" - POST
 
 "localhost/deteccao" - GET by example
 
 "localhost/deteccao/{id}" - GET
 
+
 **EmbarcacaoResource com as seguintes ROTAS e VERBOS**
+
 
 "localhost/embarcacao" - POST
 
@@ -63,7 +66,9 @@ mvn spring-boot:run
 
 "localhost/embarcacao/{id}" - GET
 
+
 **EspecieResource com as seguintes ROTAS e VERBOS**
+
 
 "localhost/especie" - POST
 
