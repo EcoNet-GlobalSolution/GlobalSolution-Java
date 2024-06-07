@@ -81,7 +81,5 @@ public class ValidationExceptionHandler {
         private String localizedMessage;
         private String title;
         private String endpoint;
-
-        // Getters e Setters
     }
 }
