@@ -196,7 +196,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"registro\": \"9827138178\",\r\n    \"nome\": \"Titanic\",\r\n    \"proprietario\": \"Capitão nascimento\",\r\n    \"tipo\": \"NAVIO_DE_PESCA\"\r\n}",
+							"raw": "{\r\n    \"registro\": \"9827138178\",\r\n    \"nome\": \"Titanic\",\r\n    \"proprietario\": \"Capitão nascimento\",\r\n    \"tipo\": \"NAVIO\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
